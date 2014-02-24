@@ -5,6 +5,7 @@ def full_title(page_title)
   else
     "#{base_title} | #{page_title}"
   end
+ end
 
   def sign_in(user, option={})
   	if option[:no_capybara]
@@ -19,4 +20,3 @@ def full_title(page_title)
   		click_button "Sign in"
   	end
   end
-end
